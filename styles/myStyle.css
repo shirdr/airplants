@@ -1,0 +1,134 @@
+﻿body {
+    font-family: rubik, sans-serif;
+    direction: rtl;
+    text-align: right;
+    background-color: #f0f0f0;
+    margin: 0;
+    background-position: center;
+    background-size: cover;
+    width: 1440px;
+    height: 1762px;
+}
+
+.header {
+    background-image: url('Picture1.png'); /* Replace with your header image URL */
+    background-size: cover;
+    padding: 50px;
+    text-align: center;
+    width: 1440px;
+    position: relative; /* Ensure relative positioning for z-index */
+    z-index: 1; /* Ensure the header is above the navigation */
+}
+
+    .header h1 {
+        color: white;
+        font-size: 36px;
+        font-family: 'Rubik', sans-serif;
+        font-weight: 600;
+    }
+
+.nav {
+    position: fixed; /* Fixed position for the navigation */
+    top: 0; /* Stick to the top of the viewport */
+    width: 100%; /* Full width of the viewport */
+    background-color: white; /* Background color for the navigation */
+    padding: 10px 0;
+    text-align: center;
+    z-index: 2; /* Ensure the navigation is above other content */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Optional shadow for styling */
+}
+
+    .nav a {
+        color: black;
+        margin: 0 15px;
+        text-decoration: none;
+        font-family: 'Rubik', sans-serif;
+        font-weight: 600;
+        color: black;
+        position: relative;
+    }
+
+        .nav a::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background: black;
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            transition: width 0.3s;
+        }
+
+        .nav a:hover::after {
+            width: 100%;
+        }
+
+.content {
+    background-color: white;
+    margin: 80px auto 20px; /* Ensure content starts below the fixed navigation */
+    padding: 20px;
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+     width: 1440px;
+
+}
+
+    .content h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+    /*
+    .content h3 {
+        color: #006400;
+       
+    }
+    */
+
+    .content p {
+        line-height: 1.6;
+    }
+
+    .content ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .content li {
+        margin: 10px 0;
+    }
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #B2C696;
+    text-align: right;
+    padding: 10px;
+}
+
+    .footer p {
+        margin: 0;
+    }
+
+    .footer a {
+        color: black;
+        margin-left: 15px;
+        text-decoration: none;
+    }
+.gveret-levin {
+    font-family: 'Gveret Levin AlefAlefAlef',  cursive;
+}
+.custom-list {
+    list-style-type: none; /* מסתיר את הסימון הרגיל של הרשימה */
+    padding: 0;
+}
+
+    .custom-list li {
+        margin-bottom: 5px; /* מרווח בין פריטי הרשימה */
+    }
+
+        .custom-list li::before {
+            content: "\2022"; /* קובע את הסימון לבולט (עיגול שחור) */
+            margin-right: 5px; /* מרווח בין הסימון לטקסט */
+        }
